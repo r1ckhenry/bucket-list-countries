@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bucket list app</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Weather PWA">
+    <link rel="apple-touch-icon" href="https://www.engenderhealth.org/wtfp/img/travel-icon.svgz">
+  </head>
+  <body>
+
+    <nav>
+      <div class="hamburger">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </div>
+      DISCOVER
+      <div class="search" id="search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+    </nav>
+
+    <div id="modal" class="modal-wrapper hide">
+      <div class="modal">
+        <div id="close" class="modal-header">
+          Where do you want to go?
+        </div>
+        <div class="modal-content">
+          <select id="countrySelect">
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-bg">
+      <img src="/images/home.png" />
+    </div>
+
+    <main>
+      <ul class="country-list" id="bucketList"></ul>
+    </main>
+
+    <script src="scripts/app.js" async></script>
+  </body>
+</html>
